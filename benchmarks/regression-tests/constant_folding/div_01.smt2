@@ -1,0 +1,12 @@
+(set-logic ALL)
+(set-info :status sat)
+(declare-const x Int)
+(assert (= x (div 10 2)))
+(assert (= 5 x))
+(check-sat)
+
+;; EXPECTED: (set-logic ALL)
+;; EXPECTED: (set-info :status sat)
+;; EXPECTED: (declare-const x Int)
+;; EXPECTED: (assert (= x 5))
+;; EXPECTED: (check-sat)

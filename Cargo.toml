@@ -1,0 +1,19 @@
+[package]
+name = "haploid"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+clap = { version = "3.2", features = ["derive"] }
+egg = "0.9"
+num = { version = "0.3.1", features = ["serde"] }
+regex = "1.5"
+log = "0.4"
+env_logger = "0.9"
+itertools = "0.10"
+lazy_static = "1.4"
+atty = "0.2"
+unicode-segmentation = "1.9"
+smt2parser = "0.6"
+

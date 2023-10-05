@@ -1,0 +1,11 @@
+(set-logic ALL)
+(declare-const _x7 Int)
+(assert (= _x7 9705429140411219280129250681473901 (- _x7 9705429140411219280129250681473901)))
+(check-sat)
+(exit)
+
+;; EXPECTED: (set-logic ALL)
+;; EXPECTED: (declare-const _x7 Int)
+;; EXPECTED: (assert false)
+;; EXPECTED: (check-sat)
+;; EXPECTED: (exit)

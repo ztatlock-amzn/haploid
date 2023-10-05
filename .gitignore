@@ -1,0 +1,25 @@
+# This directory will contain incremental build artifacts that you don't want to track.
+/.cargo
+
+# Committing Cargo.lock is not recommended with BrazilRust because it will cause double locking with your version set.
+Cargo.lock
+
+# Directories for artifacts.
+/build
+target/
+
+# Don't check in the local rustup toolchain override.
+/rust-toolchain.toml
+
+# We have some python stuff
+__pycache__
+.ipynb_checkpoints/
+
+# Mac files
+.DS_Store
+
+# Emacs files
+*~
+
+# VSCode files
+.vscode

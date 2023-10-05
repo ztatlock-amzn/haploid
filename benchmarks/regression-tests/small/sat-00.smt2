@@ -1,0 +1,11 @@
+(set-logic ALL)
+(set-info :status sat)
+(declare-const a Bool)
+(assert a)
+(check-sat)
+
+;; EXPECTED: (set-logic ALL)
+;; EXPECTED: (set-info :status sat)
+;; EXPECTED: (declare-const a Bool)
+;; EXPECTED: (assert (= a true))
+;; EXPECTED: (check-sat)

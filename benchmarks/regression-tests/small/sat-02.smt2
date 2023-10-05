@@ -1,0 +1,16 @@
+(set-logic ALL)
+(set-info :status sat)
+(declare-const a Bool)
+(declare-const b Bool)
+(assert a)
+(assert (or b (not a)))
+(check-sat)
+
+
+;; EXPECTED: (set-logic ALL)
+;; EXPECTED: (set-info :status sat)
+;; EXPECTED: (declare-const a Bool)
+;; EXPECTED: (declare-const b Bool)
+;; EXPECTED: (assert (= a true))
+;; EXPECTED: (assert (= b true))
+;; EXPECTED: (check-sat)

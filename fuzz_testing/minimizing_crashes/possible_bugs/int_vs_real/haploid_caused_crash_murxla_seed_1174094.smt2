@@ -1,0 +1,5 @@
+(set-logic ALL)
+(declare-const x Real)
+(assert (= x 0))
+(assert (set.member 0.0 (set.singleton x)))
+(assert (set.member 0.0 (set.singleton 0)))

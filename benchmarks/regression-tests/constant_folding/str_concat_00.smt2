@@ -1,0 +1,12 @@
+(set-logic ALL)
+(set-info :status sat)
+(declare-const s String)
+(assert (= s (str.++ "foo" "bar")))
+(assert (= "foobar" s))
+(check-sat)
+
+;; EXPECTED: (set-logic ALL)
+;; EXPECTED: (set-info :status sat)
+;; EXPECTED: (declare-const s String)
+;; EXPECTED: (assert (= s "foobar"))
+;; EXPECTED: (check-sat)
